@@ -1,0 +1,150 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    z-index: 3;
+}
+
+/* .logo-nav-mobile {
+    background-color: rgba(37, 43, 70, 0.5);
+    margin-top: 20px;
+} */
+
+.fill-white {
+    fill: white;
+}
+
+.inner-background {
+    fill: #252b46;
+}
+.mobile-nav-icon {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    font-size: 100%;
+    font-family: inherit;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    z-index: 3;
+}
+
+.mobile-nav-active {
+    position: fixed;
+}
+
+.mobile-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+
+.mobile-nav {
+    display: none;
+    max-width: 100%;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    bottom: 0;
+    top:0;
+    z-index: 2;
+    overflow-y: auto;
+    padding-top: 15px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background-color: rgba(37, 43, 70, 0.5);
+}
+
+.mobile-nav ul {
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.is-active {
+    display: block;
+}
+
+.navbar {
+    display: none;
+}
+
+.mobile-nav ul {
+    color: white;
+}
+
+.mobile-nav li {
+    text-align: center;
+    border-top: 1px rgba(145, 148, 161, 0.5) solid;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mobile-nav li:nth-of-type(3) {
+    border-bottom: 1px rgba(145, 148, 161, 0.5) solid;
+    padding-bottom: 20px;
+}
+
+.mobile-nav li:last-child {
+    border: 3px solid white;
+    border-radius: 5px;
+    padding-bottom: 10px; 
+    padding-top: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.mobile-nav a {
+    padding: 10px 100px;
+}
+
+.social {
+    position: absolute;
+    bottom: 50px;
+    left: 25vw;
+    right: 25vw;
+}
+
+.social img {
+    margin-right: 30px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
