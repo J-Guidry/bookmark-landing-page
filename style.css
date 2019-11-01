@@ -148,3 +148,34 @@ img {
     height: auto;
     max-width: 100%;
 }
+
+/* Banner */
+main {
+    position: relative;
+}
+
+.banner-title {
+    margin-top: 50px;
+    
+}
+
+.banner-title div {
+    position: relative;
+    margin-bottom: 60px;
+    display: block;
+    width: 100vw;
+}
+
+.banner-title div::after {
+    content: "";
+    background-color:hsl(231, 69%, 60%);
+    max-width: 75%;
+    width: 100%;
+    /* height: 200px; */
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 70px 0 0 70px;
+}
