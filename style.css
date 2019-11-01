@@ -1,17 +1,20 @@
 body {
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
 }
 
 a {
     text-decoration: none;
-    color: unset;
 }
 
 ul {
     list-style-type: none;
+}
+
+p {
+    color: hsl(229, 8%, 60%);
 }
 
 header {
@@ -22,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -155,8 +159,9 @@ main {
 }
 
 .banner-title {
-    margin-top: 50px;
-    
+    /* margin-top: 50px; */
+    max-width: 90%;
+    margin: auto;
 }
 
 .banner-title div {
@@ -178,4 +183,38 @@ main {
     right: 0;
     z-index: -1;
     border-radius: 70px 0 0 70px;
+}
+
+.banner-title p {
+    margin-bottom: 45px;
+}
+
+.banner-title a {
+    border-radius: 5px;
+    /* width: 120px; */
+    padding: 15px 8px;
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.banner-title a:nth-of-type(1) {
+    /* padding: 20px; */
+    background-color: hsl(231, 69%, 60%);
+    margin-right: 5px;
+    color: white;
+}
+
+.banner-title a:nth-of-type(2) {
+    color: black;
+    border: 1px solid white;
+    background-color: #fdf9f9;
+    -webkit-box-shadow: 4px 13px 32px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 13px 32px -18px rgba(0,0,0,0.75);
+    box-shadow: 4px 13px 32px -18px rgba(0,0,0,0.75);
+}
+
+.features {
+    margin-top: 80px;
 }
