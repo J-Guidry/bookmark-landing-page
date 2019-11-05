@@ -7,6 +7,10 @@ body {
     padding: 0;
 }
 
+* {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -21,23 +25,17 @@ p {
 
 header {
     max-width: 90%;
-    margin: auto;
+    margin: 40px auto;
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 40px;
 }
 
 .logo {
     z-index: 3;
 }
-
-/* .logo-nav-mobile {
-    background-color: rgba(37, 43, 70, 0.5);
-    margin-top: 20px;
-} */
 
 .fill-white {
     fill: white;
@@ -228,26 +226,47 @@ main {
     margin-bottom: 40px;
 }
 
-.tablinks a {
+.tab-links {
+    padding-right: 10%;
+    list-style-type: none;
+}
+
+.tab-links li {
+    border-top: grey solid 1px;
+    text-align: center;
+    /* border-bottom: grey solid 1px; */
+    padding: 20px 0;
+    overflow-y: hidden;
+}
+
+.tab-links a {
     color: hsl(229, 8%, 60%);
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
 }
 
-.tablinks li {
-    border-top: grey solid 1px;
-    /* border-bottom: grey solid 1px; */
-    padding: 10px 20px;
-}
-
-.tablinks a:hover {
-    border-bottom: solid red 2px;
-    color: black;
-}
-
-.tablinks li:nth-of-type(3) {
+.tab-links li:nth-of-type(3) {
     border-bottom: grey solid 1px;
 }
+
+.panel {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+a.active {
+    color: black;
+    display: inline;
+    border-bottom: solid red 2px;
+    position: relative;
+    top: -2px;
+}
+
 
 .tab-content div {
     position: relative;
@@ -255,6 +274,7 @@ main {
     display: block;
     width: 100vw;
     padding-bottom: 30px;
+    overflow-Y: hidden;
 }
 
 .tab-content div:after {
@@ -278,10 +298,13 @@ main {
     margin-bottom: 30px;
 }
 
+
 .tab-content section {
     margin-bottom: 30px;
+    padding-bottom: 30px;
+    height: auto;
 }
 
 .extensions {
-    margin-top: 70px;
+    margin-top: 50px;
 }
