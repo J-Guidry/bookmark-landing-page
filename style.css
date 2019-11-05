@@ -307,4 +307,43 @@ a.active {
 
 .extensions {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+
+}
+
+.extension {
+    margin-bottom: 30px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: 11px 9px 45px -31px rgba(0,0,0,0.76);
+    -moz-box-shadow: 11px 9px 45px -31px rgba(0,0,0,0.76);
+    box-shadow: 11px 9px 45px -31px rgba(0,0,0,0.76);
+}
+
+.extensions a {
+    color: white;
+    background-color:  hsl(231, 69%, 60%);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.dots {
+    background-image: url("images/bg-dots.svg");
+    height: 5px;
+    margin: 25px 5px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: auto;
 }
