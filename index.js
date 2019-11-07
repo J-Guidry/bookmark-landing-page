@@ -7,6 +7,8 @@ const header = document.querySelector("header");
 const tablinks = document.querySelector(".tab-links");
 const tabs = tablinks.querySelectorAll("a");
 const panels = document.querySelectorAll(".panel");
+const accordionBtns = document.querySelectorAll(".accordion-btn");
+
 
 function toggleMobileNav() {
     navMenu.classList.toggle("is-active");
@@ -53,8 +55,8 @@ function switchTab(oldTab, chosenTab) {
     panels[index].setAttribute("aria-hidden", "false");
 }
 
+// add click and keyboard event listeners to tabs
 tabs.forEach(function(tab, i) {
-
     tab.addEventListener("click", function(event) {
         event.preventDefault();
         const currentlySelectedTab = document.querySelector('[aria-selected="true"]');
@@ -69,7 +71,7 @@ tabs.forEach(function(tab, i) {
         let dir = e.which === 37 ? index - 1 
                 : e.which === 39 ? index + 1 
                 : e.which === 40 ? 'down' : null;
-                
+
         if (dir !== null) {
             e.preventDefault();
             dir === 'down' ? panels[i].focus() 
@@ -80,3 +82,16 @@ tabs.forEach(function(tab, i) {
 
 });
 
+accordionBtns.forEach(function(btn) {
+    let content = btn.nextElementSibling;
+    btn.onclick = () => {
+        let expandedBtn = btn.getAttribute("aria-expanded") === 'true';
+        let hidden = btn.getAttribute("aria-hidden") === 'false';
+        btn.setAttribute('aria-expanded', !expandedBtn);
+        content.setAttribute("aria-hidden", !hidden);
+        btn.firstElementChild.classList.toggle("icon-span");
+        btn.firstElementChild.firstElementChild.classList.toggle("close-icon");
+        btn.firstElementChild.firstElementChild.firstElementChild.classList.toggle("color-icon");
+        content.hidden = expandedBtn;
+    }
+});

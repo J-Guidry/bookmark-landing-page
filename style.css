@@ -158,7 +158,7 @@ main {
     position: relative;
 }
 
-.banner-title {
+.banner-title p {
     /* margin-top: 50px; */
     max-width: 90%;
     margin: auto;
@@ -345,5 +345,61 @@ a.active {
     display: flex;
     flex-direction: column;
     max-width: 85%;
-    margin: auto;
+    margin: 30px auto;
+}
+
+.accordion-btn {
+    padding: 15px 10px;
+    padding-bottom: 0;
+    background-color: white;
+    text-align: left;
+    border:none;
+    border-top: 1px solid grey;
+    /* border-bottom: 1px solid grey;  */
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+.accordion-btn:last-of-type {
+    border-bottom: 1px solid grey;
+}
+
+.accordion-btn span {
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+}
+
+.accordion-content {
+    text-align: left;
+    padding: 0;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.icon-span {
+    color: hsl(0, 94%, 66%);
+}
+
+.close-icon {
+    transform: rotate(180deg);
+}
+
+.color-icon {
+    stroke: currentColor;
+}
+
+.faq a {
+    margin-top: 30px;
+    color: white;
+    background: hsl(231, 69%, 60%);
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    max-width: 10%;
+    margin: 30px auto;
 }
