@@ -400,6 +400,96 @@ a.active {
     padding: 15px 20px;
     display: inline-block;
     border-radius: 10px;
-    max-width: 10%;
+    max-width: 30%;
     margin: 30px auto;
+}
+
+.action {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    padding: 40px 10px;
+    margin-top: 30px;
+}
+
+.joined {
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.action h2 {
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.action button {
+    display: block;
+    margin: auto;
+}
+
+.action input {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 85%;
+    margin: auto;
+}
+
+.error {
+    /* background-color: hsl(0, 94%, 66%); */
+    border-radius: 5px;
+    padding-top: 2px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-icon {
+    align-self: flex-end;
+    position:relative;
+    margin-right: 5%;
+    margin-top: -35px;
+    padding: 0;
+    display: none;
+}
+
+.error-msg {
+    padding: 5px;
+    margin-top: 10px;
+    text-align: left;
+    width: 80%;
+    margin-left: 6%;
+    margin-bottom: 0;
+    color: white;
+    font-size: 0.7em;
+    display: none;
+}
+
+.action button {
+    width: 88%;
+    border: none;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.error-display {
+    display: block;
+}
+
+.error-bg {
+    background-color: hsl(0, 94%, 66%);
+}
+
+footer {
+    background-color: hsl(229, 31%, 21%);
+    padding: 30px 0;
+}
+
+footer a {
+    color: white;
 }

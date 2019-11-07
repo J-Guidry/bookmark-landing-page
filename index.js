@@ -8,7 +8,8 @@ const tablinks = document.querySelector(".tab-links");
 const tabs = tablinks.querySelectorAll("a");
 const panels = document.querySelectorAll(".panel");
 const accordionBtns = document.querySelectorAll(".accordion-btn");
-
+const errorBg = document.querySelector(".error");
+const form = document.querySelector("form");
 
 function toggleMobileNav() {
     navMenu.classList.toggle("is-active");
@@ -95,3 +96,36 @@ accordionBtns.forEach(function(btn) {
         content.hidden = expandedBtn;
     }
 });
+
+// supress default error popup bubbles
+form.addEventListener("invalid", function(event){
+    event.preventDefault();
+}, true);
+
+form.addEventListener("submit", function(event) {
+    if (!this.checkValidity()){
+        event.preventDefault();
+    }
+});
+
+const invalid = (e) => {
+    e.target.oninvalid = (event) => {
+        //clear field before testing validity
+        event.target.setCustomValidity("");
+        
+        // if input is invalid, toggle error styles
+        if(!event.target.validity.valid) {
+            errorBg.classList.toggle("error-bg");
+            errorBg.firstElementChild.nextElementSibling.classList.toggle("error-display");
+            console.log(errorBg.firstElementChild.nextElementSibling);
+            errorBg.firstElementChild.nextElementSibling.nextElementSibling.classList.toggle("error-display");
+            console.log(errorBg.firstElementChild.nextElementSibling.nextElementSibling);
+        }
+    }
+
+    e.target.oninput = (event) => {
+        //clear field after
+        event.target.setCustomValidity("");
+    }
+
+}
