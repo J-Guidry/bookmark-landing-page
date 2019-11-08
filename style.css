@@ -7,10 +7,6 @@ body {
     padding: 0;
 }
 
-* {
-    overflow-x: hidden;
-}
-
 a {
     text-decoration: none;
 }
@@ -570,13 +566,17 @@ footer a {
 
     .navbar li {
         margin-left: 10px;
-        padding: 10px;
+        padding: 20px 0;
     }
 
     .navbar a {
         color: black;
-        padding: 20px 15px;
+        padding: 20px 20px;
         text-transform: uppercase;
+    }
+
+    .navbar a:hover {
+        color: hsl(0, 94%, 66%);
     }
 
     .navbar li:last-child {
@@ -586,6 +586,13 @@ footer a {
 
     .navbar li:last-child a{
         color: white;
+    }
+
+    .navbar li:last-child a:hover {
+        color: hsl(0, 94%, 66%);
+        background-color: white;
+        border: 1px solid hsl(0, 94%, 66%);
+        border-radius: 5px;
     }
 
     .banner-title {
@@ -606,12 +613,26 @@ footer a {
         margin-left: 0;
     }
 
+    .banner-title a:first-of-type:hover {
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+
+    .banner-title a:nth-of-type(2):hover{
+        border: 2px solid black;
+    }
+
     .features {
         margin-top: 20px;
     }
 
     .features p {
         max-width: 50%;
+    }
+
+    .tab-links a:hover {
+        color: hsl(0, 94%, 66%);
     }
 
     .tab-links {
@@ -653,32 +674,102 @@ footer a {
         margin: auto;
     }
 
-    .extension-group {
-        /* display: flex;
-        justify-content: center; */
-    }
-
     .extensions {
         display: block;
     }
 
     .extension {
         display: inline-block;
+       
+    }
 
+    .extension-group {
+        position: relative;
+        margin-bottom: 8%;
+    }
+
+    .extension a:hover {
+        background: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
     }
 
     .chrome {
-        padding-bottom: 35px;
-        margin-bottom: 13%;
+        position: relative;
         margin-right: 15px;
     }
 
     .firefox {
-        margin-bottom: 8%;
+        position: relative;
+        top: 70px;
         margin-right: 15px;
     }
 
     .opera {
-        margin-bottom: 3%;
+        position: relative;
+        top: 120px;
+    }
+
+    .faq {
+        max-width: 50%;
+    }
+
+    .faq button:hover {
+        cursor: pointer;
+        color: hsl(0, 94%, 66%);
+    }
+
+    form {
+        position: relative;
+    }
+
+    .action input {
+        max-width: 100%;
+        width: 100%;
+        display: inline-block;
+        padding-right: 0;
+    }
+
+    .action button {
+        max-width: 10%;
+        display: inline;
+        margin-top: 0;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .action button:hover {
+        background: white;
+        color: hsl(0, 94%, 66%);
+        border: 2px solid hsl(0, 94%, 66%);
+    }
+
+    .error {
+        display: inline-flex;
+        padding-right: 0;
+        margin-right: 0;
+        max-width: 50%;
+    }
+
+    footer svg {
+        display: inline;
+    }
+
+    footer ul {
+        display: inline-flex;
+    }
+
+    footer li {
+        padding: 25px;
+        margin-right: 0;
+    }
+
+    .footer-nav {
+        display: inline-block;
+    }
+
+    .social-footer {
+        display: inline-flex;
+        max-width: 30%;
     }
 }

@@ -117,9 +117,7 @@ const invalid = (e) => {
         if(!event.target.validity.valid) {
             errorBg.classList.toggle("error-bg");
             errorBg.firstElementChild.nextElementSibling.classList.toggle("error-display");
-            console.log(errorBg.firstElementChild.nextElementSibling);
             errorBg.firstElementChild.nextElementSibling.nextElementSibling.classList.toggle("error-display");
-            console.log(errorBg.firstElementChild.nextElementSibling.nextElementSibling);
         }
     }
 
