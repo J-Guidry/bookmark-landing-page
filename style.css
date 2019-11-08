@@ -278,16 +278,16 @@ a.active {
 }
 
 
-.tab-content div {
+.illustration {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     display: block;
     width: 100vw;
     padding-bottom: 30px;
-    overflow-Y: hidden;
+    overflow-y: hidden;
 }
 
-.tab-content div:after {
+.illustration:after {
     content: "";
     background-color:hsl(231, 69%, 60%);
     max-width: 75%;
@@ -306,6 +306,10 @@ a.active {
     color: white;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.feature-header {
+    padding-bottom: 15px;
 }
 
 
@@ -600,5 +604,43 @@ footer a {
 
     .banner-title header p {
         margin-left: 0;
+    }
+
+    .features {
+        margin-top: 20px;
+    }
+
+    .features p {
+        max-width: 50%;
+    }
+
+    .tab-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tab-links li {
+        border-top: none;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tab-links li:last-child {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .feature-header {
+        text-align: left;
+        margin-left: 3%;
+    }
+
+    .feature-header p {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
