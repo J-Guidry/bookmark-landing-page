@@ -90,7 +90,7 @@ header {
 }
 
 .mobile-nav ul {
-    margin-top: 40px;
+    margin-top: 100px;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
@@ -141,8 +141,10 @@ header {
 .social {
     position: absolute;
     bottom: 50px;
-    left: 25vw;
-    right: 25vw;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
 }
 
 .social img {
@@ -155,7 +157,7 @@ img {
 }
 
 .social a {
-    padding: 10px 30px;
+    padding: 10px 25px;
     position: relative;
 }
 
