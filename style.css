@@ -135,6 +135,7 @@ header {
 
 .mobile-nav a {
     padding: 10px 100px;
+    color: white;
 }
 
 .social {
@@ -151,6 +152,11 @@ header {
 img {
     height: auto;
     max-width: 90%;
+}
+
+.social a {
+    padding: 10px 30px;
+    position: relative;
 }
 
 /* Banner */
@@ -215,6 +221,8 @@ main {
     box-shadow: 4px 13px 32px -18px rgba(0,0,0,0.75);
 }
 
+
+/* features section */
 .features {
     margin-top: 80px;
     text-align: center;
@@ -314,6 +322,7 @@ a.active {
 
 }
 
+/* extensions section */
 .extension {
     margin-bottom: 30px;
     height: auto;
@@ -341,6 +350,7 @@ a.active {
     margin: 25px 5px;
 }
 
+/* frequently asked questions section */
 .faq {
     display: flex;
     flex-direction: column;
@@ -404,6 +414,7 @@ a.active {
     margin: 30px auto;
 }
 
+/* call to action */
 .action {
     background-color: hsl(231, 69%, 60%);
     color: white;
@@ -488,8 +499,50 @@ a.active {
 footer {
     background-color: hsl(229, 31%, 21%);
     padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer svg {
+    margin-bottom: 10px;
+}
+
+footer svg path {
+    fill: white;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 2px;
 }
 
 footer a {
     color: white;
+    padding: 20px;
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 30%;
+    width:100%;
+}
+
+.social-footer a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-footer img {
+    width: 100%;
 }
