@@ -463,7 +463,7 @@ a.active {
 .error-icon {
     align-self: flex-end;
     position:relative;
-    margin-right: 5%;
+    margin-right: 8%;
     margin-top: -35px;
     padding: 0;
     display: none;
@@ -723,18 +723,23 @@ footer a {
         position: relative;
     }
 
-    .action input {
-        max-width: 100%;
-        width: 100%;
-        display: inline-block;
+    .error {
+        display: inline-flex;
         padding-right: 0;
+        /* margin-right: 25px; */
+        width: 25%;
+    }
+
+    .action input {
+        display: inline-block;
+        /* margin-right: 25px; */
     }
 
     .action button {
         max-width: 10%;
         display: inline;
         margin-top: 0;
-        margin-left: 20px;
+        margin-left: 10px;
         cursor: pointer;
     }
 
@@ -742,13 +747,6 @@ footer a {
         background: white;
         color: hsl(0, 94%, 66%);
         border: 2px solid hsl(0, 94%, 66%);
-    }
-
-    .error {
-        display: inline-flex;
-        padding-right: 0;
-        margin-right: 0;
-        max-width: 50%;
     }
 
     footer svg {
