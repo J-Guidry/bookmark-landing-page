@@ -23,7 +23,7 @@ p {
     color: hsl(229, 8%, 60%);
 }
 
-header {
+.header {
     max-width: 90%;
     margin: 40px auto;
     position: relative;
@@ -590,15 +590,15 @@ footer a {
         text-align: left;
     }
 
-    .banner-title div:nth-of-type(2) {
+    .banner-title header {
        margin-left: 5%;
     }
 
-    .banner-title a {
+    .banner-title header a {
         width: 30%;
     }
 
-    .banner-title p {
+    .banner-title header p {
         margin-left: 0;
     }
 }
