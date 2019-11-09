@@ -305,6 +305,10 @@ a.active {
     padding-bottom: 15px;
 }
 
+.feature-header a {
+    border-radius: 5px;
+}
+
 
 .tab-content section {
     margin-bottom: 30px;
